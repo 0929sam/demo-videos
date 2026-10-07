@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>胡宸碩｜範例影片</title>
+<style>
+:root {
+  --bg: #f4f6fa; --surface: #ffffff; --fg: #17202e; --muted: #5b6778; --line: #d9dfe9;
+  --accent: #2346c9; --ok: #17803d; --ok-bg: #e2f4e8; --bad: #c0322b; --bad-bg: #fbe5e3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f141c; --surface: #18202c; --fg: #e7ecf3; --muted: #9aa7ba; --line: #2a3546;
+    --accent: #8aa2ff; --ok: #5fd08a; --ok-bg: #173324; --bad: #ff8a80; --bad-bg: #3a1d1c;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); line-height: 1.6;
+  font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", system-ui, sans-serif; }
+main { max-width: 980px; margin: 0 auto; padding: 28px 16px 56px; }
+h1 { margin: 0 0 4px; font-size: 28px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); }
+section { margin-top: 32px; }
+h2 { margin: 0 0 6px; font-size: 20px; padding-bottom: 6px; border-bottom: 2px solid var(--fg); }
+.desc { margin: 8px 0 14px; color: var(--muted); font-size: 14px; }
+.grid { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+.desc + .grid { margin-top: 0; }
+.card a { display: block; height: 100%; color: inherit; text-decoration: none; background: var(--surface);
+  border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.card a:hover, .card a:focus-visible { border-color: var(--accent); }
+.card a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.thumb { position: relative; aspect-ratio: 16 / 9; background: #0b0f16; }
+.thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.play { position: absolute; inset: 0; display: grid; place-items: center; }
+.play span { width: 48px; height: 48px; border-radius: 50%; background: rgba(0, 0, 0, .6);
+  display: grid; place-items: center; }
+.play svg { width: 20px; height: 20px; fill: #fff; margin-left: 3px; }
+.body { padding: 12px 14px 14px; }
+.title { font-weight: 700; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.chip { font-size: 12px; font-weight: 700; padding: 1px 8px; border-radius: 999px; }
+.chip.ok { background: var(--ok-bg); color: var(--ok); }
+.chip.bad { background: var(--bad-bg); color: var(--bad); }
+.note { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
+.ref { margin: 6px 0 0; font-size: 12px; color: var(--muted); }
+footer { margin-top: 40px; color: var(--muted); font-size: 13px; text-align: center; }
+footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>胡宸碩｜範例影片</h1>
+    <p class="sub">點一下縮圖,會在 YouTube 開啟影片。</p>
+  </header>
+    <section>
+      <h2>大學專題</h2>
+      <p class="desc">FPGA 影像壓縮與回傳系統:PC 端工具可即時調整影像尺寸、壓縮比與傳送節奏,不需重新編譯與燒錄。</p>
+      <ul class="grid">
+        <li class="card">
+          <a href="https://www.youtube.com/watch?v=wjktEV1mo7g" target="_blank" rel="noopener">
+            <div class="thumb">
+              <img src="https://i.ytimg.com/vi/wjktEV1mo7g/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+              <div class="play"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span></div>
+            </div>
+            <div class="body">
+              <div class="title">更換照片</div>
+              <p class="note">於 UI 選取不同尺寸的影像即可傳送壓縮。</p><p class="ref">對應論文 3.9、3.10 節</p>
+            </div>
+          </a>
+        </li>
+        <li class="card">
+          <a href="https://www.youtube.com/watch?v=vC3JYSHfsFg" target="_blank" rel="noopener">
+            <div class="thumb">
+              <img src="https://i.ytimg.com/vi/vC3JYSHfsFg/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+              <div class="play"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span></div>
+            </div>
+            <div class="body">
+              <div class="title">更改 delay</div>
+              <p class="note">調整 Delay Interval,控制封包傳送節奏。</p><p class="ref">對應論文 3.7 節</p>
+            </div>
+          </a>
+        </li>
+        <li class="card">
+          <a href="https://www.youtube.com/watch?v=3hPH1rwkqq8" target="_blank" rel="noopener">
+            <div class="thumb">
+              <img src="https://i.ytimg.com/vi/3hPH1rwkqq8/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+              <div class="play"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span></div>
+            </div>
+            <div class="body">
+              <div class="title">更改 CR 值</div>
+              <p class="note">調整壓縮比 CR,Segment 位元組上限隨之重算並送入 FPGA。</p><p class="ref">對應論文 3.6、3.10 節</p>
+            </div>
+          </a>
+        </li>
+        <li class="card">
+          <a href="https://www.youtube.com/watch?v=LBMI8ercRww" target="_blank" rel="noopener">
+            <div class="thumb">
+              <img src="https://i.ytimg.com/vi/LBMI8ercRww/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+              <div class="play"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span></div>
+            </div>
+            <div class="body">
+              <div class="title">更改 burst</div>
+              <p class="note">調整 Burst Size,控制每次連續送出的封包數。</p><p class="ref">對應論文 3.7 節</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>作品一 · FPGA I2C Master — SSD1306 OLED Driver</h2>
+      <ul class="grid">
+        <li class="card">
+          <a href="https://www.youtube.com/shorts/YfBtqkx9CaQ" target="_blank" rel="noopener">
+            <div class="thumb">
+              <img src="https://i.ytimg.com/vi/YfBtqkx9CaQ/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+              <div class="play"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span></div>
+            </div>
+            <div class="body">
+              <div class="title">I2C 失敗畫面<span class="chip bad">失敗</span></div>
+              
+            </div>
+          </a>
+        </li>
+        <li class="card">
+          <a href="https://www.youtube.com/shorts/_R5s99MtrmM" target="_blank" rel="noopener">
+            <div class="thumb">
+              <img src="https://i.ytimg.com/vi/_R5s99MtrmM/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+              <div class="play"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span></div>
+            </div>
+            <div class="body">
+              <div class="title">I2C 成功畫面<span class="chip ok">成功</span></div>
+              
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>作品二 · FPGA VGA Fruit Dash — 接水果生存遊戲</h2>
+      <p class="desc">Verilog RTL 實作,平台為 Terasic DE10-Standard。</p>
+      <ul class="grid">
+        <li class="card">
+          <a href="https://www.youtube.com/watch?v=m19fIhxPt5E" target="_blank" rel="noopener">
+            <div class="thumb">
+              <img src="https://i.ytimg.com/vi/m19fIhxPt5E/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+              <div class="play"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span></div>
+            </div>
+            <div class="body">
+              <div class="title">VGA 遊戲</div>
+              
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+  <footer>GitHub:<a href="https://github.com/0929sam" target="_blank" rel="noopener">github.com/0929sam</a></footer>
+</main>
+</body>
+</html>
