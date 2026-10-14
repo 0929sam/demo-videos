@@ -27,6 +27,7 @@ h2 { margin: 0 0 6px; font-size: 20px; padding-bottom: 6px; border-bottom: 2px s
 .desc { margin: 8px 0 14px; color: var(--muted); font-size: 14px; }
 .grid { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 14px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+.desc a { color: var(--accent); }
 .desc + .grid { margin-top: 0; }
 .card a { display: block; height: 100%; color: inherit; text-decoration: none; background: var(--surface);
   border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
@@ -59,6 +60,18 @@ footer a { color: var(--accent); }
       <h2>大學專題</h2>
       <p class="desc">FPGA 影像壓縮與回傳系統:PC 端工具可即時調整影像尺寸、壓縮比與傳送節奏,不需重新編譯與燒錄。</p>
       <ul class="grid">
+        <li class="card">
+          <a href="https://www.youtube.com/watch?v=v8W-Wm5VAmQ" target="_blank" rel="noopener">
+            <div class="thumb">
+              <img src="https://i.ytimg.com/vi/v8W-Wm5VAmQ/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+              <div class="play"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span></div>
+            </div>
+            <div class="body">
+              <div class="title">完整操作流程</div>
+              <p class="note">全部使用步驟:接線、燒錄 FPGA、傳送影像並比對結果,最後換一張影像(約 1 分鐘)。</p><p class="ref">對應論文 3.7、3.8、3.11 節</p>
+            </div>
+          </a>
+        </li>
         <li class="card">
           <a href="https://www.youtube.com/watch?v=wjktEV1mo7g" target="_blank" rel="noopener">
             <div class="thumb">
@@ -111,6 +124,7 @@ footer a { color: var(--accent); }
     </section>
     <section>
       <h2>作品一 · FPGA I2C Master — SSD1306 OLED Driver</h2>
+      <p class="desc">從零手刻的 I2C Master 控制器,透過杜邦線驅動 SSD1306 OLED 顯示器。<br>原始碼:<a href="https://github.com/0929sam/FPGA-I2C-SSD1306-OLED" target="_blank" rel="noopener">github.com/0929sam/FPGA-I2C-SSD1306-OLED</a></p>
       <ul class="grid">
         <li class="card">
           <a href="https://www.youtube.com/shorts/YfBtqkx9CaQ" target="_blank" rel="noopener">
@@ -120,6 +134,7 @@ footer a { color: var(--accent); }
             </div>
             <div class="body">
               <div class="title">I2C 失敗畫面<span class="chip bad">失敗</span></div>
+              <p class="note">修正前的畫面,顯示內容不正確。</p><p class="ref">對應備審資料 作品一</p>
               
             </div>
           </a>
@@ -132,6 +147,7 @@ footer a { color: var(--accent); }
             </div>
             <div class="body">
               <div class="title">I2C 成功畫面<span class="chip ok">成功</span></div>
+              <p class="note">修正 START/STOP 時序後,OLED 穩定顯示預期的 128×64 圖案。</p><p class="ref">對應備審資料 作品一</p>
               
             </div>
           </a>
@@ -140,7 +156,7 @@ footer a { color: var(--accent); }
     </section>
     <section>
       <h2>作品二 · FPGA VGA Fruit Dash — 接水果生存遊戲</h2>
-      <p class="desc">Verilog RTL 實作,平台為 Terasic DE10-Standard。</p>
+      <p class="desc">Verilog RTL 實作,平台為 Terasic DE10-Standard。<br>原始碼:<a href="https://github.com/0929sam/FPGA-VGA-Fruit-Dash" target="_blank" rel="noopener">github.com/0929sam/FPGA-VGA-Fruit-Dash</a></p>
       <ul class="grid">
         <li class="card">
           <a href="https://www.youtube.com/watch?v=m19fIhxPt5E" target="_blank" rel="noopener">
@@ -150,6 +166,7 @@ footer a { color: var(--accent); }
             </div>
             <div class="body">
               <div class="title">VGA 遊戲</div>
+              <p class="note">實機遊玩:左右移動、跳躍、衝刺,接水果並閃避炸彈。</p><p class="ref">對應備審資料 作品二</p>
               
             </div>
           </a>
